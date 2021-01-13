@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-title>
+      Editar historiales medicos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <br>
+  <img src="assets/img/uni.png" alt="">
+
+
+  <ion-item>
+   
+      <ion-label class="icon" position="floating">ingrese su correo</ion-label>
+  
+      <ion-input  type="email" name = "email"
+  
+      
+      [(ngModel)]="email">
+      
+         </ion-input>
+  </ion-item>
+  
+
+
+
+  <ion-item>
+   
+    <ion-label class="icon" position="floating">ingrese su num documento</ion-label>
+
+    <ion-input  type="password" name = "password"
+
+    
+    [(ngModel)]="password">
+    
+       </ion-input>
+</ion-item>
+<br>
+<ion-button (click) = "onSubmitLogin()" expand="block">
+seguir
+</ion-button>
+</ion-content>
+
+
+<ion-fab vertical="bottom">
+    <ion-button color = 'danger' button [routerLink]="['/histo']">
+      volver
+    </ion-button>
+    
+    </ion-fab>

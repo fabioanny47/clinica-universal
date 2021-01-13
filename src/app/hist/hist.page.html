@@ -1,0 +1,52 @@
+<ion-header no-border>
+  <ion-toolbar color="secondary">
+    <ion-title>Historiales</ion-title>
+  </ion-toolbar>
+
+
+  <ion-toolbar color="secondary">
+  <ion-searchbar placeholder="digite documento" (ionChange)="buscarHistoria($event)" >
+
+  </ion-searchbar>
+  </ion-toolbar>
+
+
+
+</ion-header>
+
+
+<ion-content>
+ <ion-list>
+  <ion-item-sliding *ngFor="let todo of todos | filtro:textoBuscar">
+    <ion-item lines="inset" button [routerLink]="['/details', todo.id]">
+<ion-label>
+{{todo.documento}}
+</ion-label>
+  </ion-item>
+ 
+</ion-item-sliding>
+</ion-list>
+
+
+
+ 
+
+
+
+
+<ion-fab vertical="bottom" horizontal ="end" slot="fixed">
+<ion-fab-button routerLink="/details" routerDirection="forward">
+<ion-icon name="add"></ion-icon>
+</ion-fab-button>
+</ion-fab>
+
+
+
+<ion-fab vertical="bottom"  slot="fixed">
+  <ion-button color = 'danger' (click)="Onlogout()">
+    salir
+  </ion-button>
+  
+  </ion-fab>
+
+</ion-content>

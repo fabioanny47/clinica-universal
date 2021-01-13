@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-title>
+    Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/img/cli.jpg"></ion-img>
+    <ion-card-header>
+     
+      <ion-card-title>Clinica universal</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Somos un grupo de expertos especializados en la atencion social y medica de personas de todas las edades, contamos con especialistas preparados para atender enfermedades generales y especificas, con sede en el norte del cauca, somos la mejor entidad de atencion publica en la zona.</p>
+    </ion-card-content>
+  </ion-card>
+ 
+  <ion-list>
+      <ion-item >
+      <ion-button color = 'secondary' button [routerLink]="['/tabs/tab1']">
+        volver
+      </ion-button>
+    </ion-item>
+      <ion-item color = "primary" lines="inset" button [routerLink]="['/histo']">
+  <ion-label>
+ Historiales
+  </ion-label>
+    </ion-item>
+
+
+    <ion-item color = "primary" lines="inset" button [routerLink]="['/detailse']">
+      <ion-label>
+     Citas
+      </ion-label>
+        </ion-item>
+       
+        <ion-item color = "primary" lines="inset" button [routerLink]="['/razon']">
+          <ion-label>
+         Razon social
+          </ion-label>
+            </ion-item>
+           
+   
+<ion-item color = "primary" lines="inset" button [routerLink]="['/tab4']">
+   <ion-label>
+   Informacion general
+   </ion-label>
+    </ion-item>
+
+
+
+
+
+    
+  </ion-list>
+     
+  
+     
+      
+    
+</ion-content>
+
+

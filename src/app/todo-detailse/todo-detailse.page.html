@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Citas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-list lines = "full">
+  
+
+
+          
+        
+     
+  <ion-item *ngIf="cit">
+    
+      
+      <ion-select placeholder="elija el doctor que prefiera" [(ngModel)] = "cit.doctor" >
+          <ion-input required type="text" >
+        <ion-select-option value="hector garcia">Hector garcia </ion-select-option>
+        <ion-select-option value="diana mendez">Diana mendez </ion-select-option>
+        <ion-select-option value="victor juarez">victor juarez </ion-select-option>
+      </ion-input>
+      </ion-select>
+         
+          
+      
+      
+ 
+  </ion-item>
+   
+  
+   
+  <ion-item *ngIf="cit">
+      <ion-datetime  [(ngModel)] = "cit.fecha" placeholder="Elija una fecha" display-format= " MMM  DD , YYYY  HH:mm ">
+      <ion-input required type="text"  >
+      </ion-input>
+    </ion-datetime>
+     
+      </ion-item>
+      
+    
+  
+  
+  </ion-list>
+     
+  <ion-button expand= "full" (click)="saveTodo()"> guardar</ion-button> 
+  
+  
+</ion-content>
+     

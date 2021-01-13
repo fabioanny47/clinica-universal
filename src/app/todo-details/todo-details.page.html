@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Historia</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content>
+    <ion-list lines = "full">
+
+  
+<ion-item *ngIf="todo">
+<ion-input required type="text" placeholder="digite numero de documento" [(ngModel)] = "todo.documento">
+  
+</ion-input>
+</ion-item>
+
+<ion-item *ngIf="todo">
+  <ion-input required type="text" placeholder="digite nombre" [(ngModel)] = "todo.nombre">
+    
+  </ion-input>
+  </ion-item>
+
+  <ion-item *ngIf="todo">
+    <ion-input required type="text" placeholder="ingrese datos de la historia" [(ngModel)] = "todo.historia">
+      
+    </ion-input>
+    </ion-item>
+
+  <ion-item *ngIf="todo">
+      <ion-input required type="text" placeholder="en caso de medicina enviada" [(ngModel)] = "todo.medicina">
+        
+      </ion-input>
+      </ion-item>
+
+
+ 
+
+
+</ion-list>
+   
+<ion-button expand= "full" (click)="saveTodo()"> guardar</ion-button> 
+
+
+
+   <ion-fab vertical="bottom" horizontal ="end" slot="fixed" color ="danger">
+   <ion-fab-button color= "danger"   (click)= "onRemove(todoId)" >
+   <ion-icon name="trash"></ion-icon>
+   </ion-fab-button>
+   
+   
+   
+   </ion-fab>
+   
+   
+  
+   
+   
+   
+   </ion-content>
+   

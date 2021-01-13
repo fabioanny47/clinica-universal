@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Historia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list lines = "full">
+
+
+<ion-item >
+  Documento: {{todo.documento}}
+</ion-item>
+
+<ion-item >
+  Nombre: {{todo.nombre}}
+  </ion-item>
+
+  <ion-item >
+
+    <ion-text>
+
+        Historial medico: {{todo.historia}}
+
+    </ion-text>
+   
+    </ion-item>
+
+  <ion-item >
+     Medicina: {{todo.medicina}}
+      </ion-item>
+
+
+</ion-list>
+   
+
+   
+   </ion-content>
+
+
+
+
+   <ion-fab vertical="bottom"  slot="fixed">
+    <ion-button color = 'danger' button [routerLink]="['/histo']">
+      volver
+    </ion-button>
+
+  
+        
